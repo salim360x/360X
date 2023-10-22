@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>صفحة تسجيل الدخول</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            margin: 100px auto;
+            width: 300px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 5px;
+        }
+        .login-button {
+            background-color: #0074d9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* تصميم زر الانتقال إلى الصفحة الأخرى */
+        .next-page-button {
+            background-color: #009933;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>تسجيل الدخول</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="اسم المستخدم" required><br><br>
+            <input type="password" id="password" placeholder="كلمة المرور" required><br><br>
+            <button class="login-button" type="button" onclick="checkLogin()">تسجيل الدخول</button>
+        </form>
+    </div>
+
+    <!-- زر الانتقال إلى الصفحة الأخرى -->
+    <a href="1.html">
+        <button class="next-page-button">اتصل بنا لي الحصول على معلومات تسجيل الدخول</button>
+    </a>
+
+    <script>
+        function checkLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // يمكنك تحقق هنا من كلمة المرور (بشكل بسيط)، مثلا:
+            if (username === "1" && password === "1") {
+                alert("تم تسجيل الدخول بنجاح!");
+                window.location.href = "صفحة_ثانية.html";
+            } else {
+                alert("خطأ في اسم المستخدم أو كلمة المرور. الوصول مرفوض.");
+            }
+        }
+    </script>
+</body>
+</html>

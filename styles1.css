@@ -1,0 +1,65 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Droid Arabic Naskh', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.icon {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+
+.sidebar {
+    background-color: grey;
+    color: #fff;
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    text-align: right;
+}
+
+#icon {
+    display: block;
+}
+/* تنسيق الأزرار داخل القائمة الجانبية */
+.blue-button {
+    background-color: #0074D9; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    border: none;
+    padding: 10px 8px; /* المسافات داخل الزر */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px; /* حواف منحنية */
+}
+
+/* تغيير اللون عند التحويل */
+.blue-button:hover {
+    background-color: green;
+}
+
+/* تنسيقات أخرى يمكن أن تكون موجودة هنا */
